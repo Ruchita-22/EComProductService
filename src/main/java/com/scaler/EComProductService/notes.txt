@@ -1,0 +1,32 @@
+**Important Point**
+------------------------
+
+For construction injection we don't need to write @aurowire
+
+**Annotation used**
+--------------------------
+@RestController
+
+**For Mapping**
+
+@Mapping
+@RequestMapping
+@GetMapping("/products")
+@PostMapping("/products")
+@DeleteMapping("/products/{id}")
+
+@Service -  interface as well as on class
+@Component
+@Autowired
+
+@Qualifier(value = "fakeStoreProductService")
+@Value
+@PathVariable("id")
+@RequestBody ProductRequestDTO productRequestDTO
+@ControllerAdvice
+@ExceptionHandler(value = ProductNotFoundException.class)
+
+
+@Data - Lambok annotation , it will generate getter, setter, toString
+
+No annodation used in dto, model, exception, mapper, util
